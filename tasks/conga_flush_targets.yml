@@ -1,0 +1,8 @@
+  # Setup CONGA facts with role aem-publish to get the publish flush target
+- name: "Retrieve publish flush targets"
+  set_fact:
+    # query for defined flush targets
+    aem_dispatcher_flush_targets: "{{ conga_config |  json_query(conga_aem_dispatcher_target_query)}}"
+  notify:
+    - flush dispatcher
+  changed_when: true

@@ -1,4 +1,4 @@
-# aem-dispatcher-flush
+# conga-aem-dispatcher-flush
 
 This role flushes AEM dispatcher caches of a
 [CONGA](http://devops.wcm.io/conga/) role. It reads the dispatcher flush

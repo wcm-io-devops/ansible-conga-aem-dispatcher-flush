@@ -1,2 +1,0 @@
-- name: conga flush dispatcher
-  include: conga_flush_targets.yml

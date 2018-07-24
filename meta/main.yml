@@ -27,4 +27,6 @@ galaxy_info:
 
 dependencies:
   - conga-facts
-  - aem-dispatcher-flush
+  - { role: aem-dispatcher-flush,
+      aem_dispatcher_flush_targets: "{{ conga_config |  json_query(conga_aem_dispatcher_target_query)}}"
+    }

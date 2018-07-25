@@ -1,1 +1,2 @@
+# The jmespath query executed on the conga_config dict  to determine the flush targets
 conga_aem_dispatcher_target_query: "*.*.flushTarget.url[]"

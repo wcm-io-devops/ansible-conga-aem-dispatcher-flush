@@ -27,7 +27,10 @@ galaxy_info:
     - wcmio
 
 dependencies:
-  - wcm_io_devops.conga_facts
+  - { role: wcm_io_devops.conga_facts,
+      version: 1.0.0
+    }
   - { role: wcm_io_devops.aem_dispatcher_flush,
+      version: 1.0.0,
       aem_dispatcher_flush_targets: "{{ conga_config |  json_query(conga_aem_dispatcher_target_query)}}"
     }

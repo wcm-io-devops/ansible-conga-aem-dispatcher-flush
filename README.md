@@ -3,6 +3,11 @@
 This role flushes AEM dispatcher caches of a
 [CONGA](http://devops.wcm.io/conga/) `aem-dispatcher` role.
 
+> This role was developed as part of the
+> [wcm.io DevOps Ansible Automation for AEM](http://devops.wcm.io/ansible-aem/)
+> to integrate Ansible with
+> [CONGA](http://devops.wcm.io/conga/).
+
 ## Requirements
 
 This role requires Ansible 2.0 or higher.

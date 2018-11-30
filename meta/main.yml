@@ -32,5 +32,5 @@ dependencies:
     }
   - { role: wcm_io_devops.aem_dispatcher_flush,
       version: 1.0.0,
-      aem_dispatcher_flush_targets: "{{ conga_config |  json_query(conga_aem_dispatcher_target_query)}}"
+      aem_dispatcher_flush_targets: "{{ conga_config |  json_query(conga_aem_dispatcher_target_query) }}"
     }
